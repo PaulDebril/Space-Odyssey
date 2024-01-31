@@ -12,18 +12,23 @@ public class TabletManager : MonoBehaviour
     {
         index = 0;
         setActivePlanet();
+        Debug.Log("actvated");
     }
 
     private void setActivePlanet()
     {
         for (int i = 0; i < background.Length; i++)
         {
+            Debug.Log(i == index);
             background[i].gameObject.SetActive(i == index);
         }
     }
 
     public void Next()
     {
+        Debug.Log(index + 1);
+        Debug.Log(background.Length);
+        
         index = (index + 1) % background.Length;
         setActivePlanet();
     }
