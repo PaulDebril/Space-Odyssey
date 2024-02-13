@@ -15,8 +15,10 @@ public class TabletManager : MonoBehaviour
         setActivePlanet();
     }
 
-    private void setActivePlanet()
+    private void setActivePlanet(bool isNext = true)
     {
+        getPlanetIn(planetsUi[index].gameObject, isNext);
+
         for (int i = 0; i < planetsUi.Length; i++)
         {
             planetsUi[i].gameObject.SetActive(i == index);
@@ -24,14 +26,26 @@ public class TabletManager : MonoBehaviour
         }
     }
 
+    private void getPlanetOut(GameObject planet, bool isNext)
+    {
+        planet.GetComponent<Animator>().SetFloat(isNext ? "exitNext" : "exitPrevious", 1);
+    }
+
+    private void getPlanetIn(GameObject planet, bool isNext)
+    {
+        planet.GetComponent<Animator>().SetFloat(isNext ? "enterNext" : "enterPrevious", 1);
+    }
+
     public void Next()
     {
+        getPlanetOut(planetsUi[index].gameObject, true);
         index = (index + 1) % planetsUi.Length;
         setActivePlanet();
     }
 
     public void Previous()
     {
+        getPlanetOut(planetsUi[index].gameObject, false);
         index = index - 1 >= 0 ? index - 1 : planetsUi.Length - 1;
         setActivePlanet();
     }
