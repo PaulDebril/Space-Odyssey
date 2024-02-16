@@ -28,12 +28,12 @@ public class TabletManager : MonoBehaviour
 
     private void getPlanetOut(GameObject planet, bool isNext)
     {
-        planet.GetComponent<Animator>().SetFloat(isNext ? "exitNext" : "exitPrevious", 1);
+        planet.GetComponent<Animator>().SetTrigger(isNext ? "exitNext" : "exitPrevious");
     }
 
     private void getPlanetIn(GameObject planet, bool isNext)
     {
-        planet.GetComponent<Animator>().SetFloat(isNext ? "enterNext" : "enterPrevious", 1);
+        planet.GetComponent<Animator>().SetTrigger(isNext ? "enterNext" : "enterPrevious");
     }
 
     public void Next()
