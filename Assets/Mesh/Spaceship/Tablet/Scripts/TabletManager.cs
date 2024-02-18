@@ -1,0 +1,60 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class TabletManager : MonoBehaviour
+{
+    public GameObject[] planetsUi;
+    public GameObject[] planetsModels;
+    int index;
+    public static string selectedPlanet;
+
+    void Start()
+    {
+        index = 0;
+        setActivePlanet();
+    }
+
+    IEnumerator changePlanetDelay(bool isNext = true)
+    {
+        yield return new WaitForSeconds(0.667f);
+        setActivePlanet(isNext);
+    }
+
+    private void setActivePlanet(bool isNext = true)
+    {
+        for (int i = 0; i < planetsUi.Length; i++)
+        {
+            planetsUi[i].gameObject.SetActive(i == index);
+            planetsModels[i].gameObject.SetActive(i == index);
+        }
+        
+        getPlanetIn(planetsUi[index].gameObject, isNext);
+        TabletManager.selectedPlanet = planetsUi[index].gameObject.name;
+    }
+
+    private void getPlanetOut(GameObject planet, bool isNext)
+    {
+        planet.GetComponent<Animator>().SetTrigger(!isNext ? "exitNext" : "exitPrevious");
+    }
+
+    private void getPlanetIn(GameObject planet, bool isNext)
+    {
+        planet.GetComponent<Animator>().SetTrigger(!isNext ? "enterNext" : "enterPrevious");
+    }
+
+    public void Next()
+    {
+        getPlanetOut(planetsUi[index].gameObject, true);
+        index = (index + 1) % planetsUi.Length;
+        StartCoroutine(changePlanetDelay(true));
+    }
+
+    public void Previous()
+    {
+        getPlanetOut(planetsUi[index].gameObject, false);
+        index = index - 1 >= 0 ? index - 1 : planetsUi.Length - 1;
+        StartCoroutine(changePlanetDelay(false));
+    }
+}

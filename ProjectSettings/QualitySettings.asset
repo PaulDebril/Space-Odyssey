@@ -129,7 +129,7 @@ QualitySettings:
     billboardsFaceCameraPosition: 1
     useLegacyDetailDistribution: 1
     vSyncCount: 1
-    realtimeGICPUUsage: 25
+    realtimeGICPUUsage: 75
     lodBias: 2
     maximumLODLevel: 0
     enableLODCrossFade: 1
@@ -139,11 +139,11 @@ QualitySettings:
     streamingMipmapsRenderersPerFrame: 512
     streamingMipmapsMaxLevelReduction: 2
     streamingMipmapsMaxFileIORequests: 1024
-    particleRaycastBudget: 2048
+    particleRaycastBudget: 4096
     asyncUploadTimeSlice: 2
     asyncUploadBufferSize: 16
     asyncUploadPersistentBuffer: 1
-    resolutionScalingFixedDPIFactor: 1
+    resolutionScalingFixedDPIFactor: 2
     customRenderPipeline: {fileID: 11400000, guid: 7b7fd9122c28c4d15b667c7040e3b3fd,
       type: 2}
     terrainQualityOverrides: 0

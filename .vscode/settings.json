@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Odysee.sln"
+    "dotnet.defaultSolution": "VR-Game-Jam-Template-main.sln"
 }
