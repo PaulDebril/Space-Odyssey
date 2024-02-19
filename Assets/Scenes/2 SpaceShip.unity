@@ -4374,8 +4374,8 @@ PrefabInstance:
     - target: {fileID: 8228542742798409357, guid: 30a1e77eafe8f644dba70315d5f67504,
         type: 3}
       propertyPath: m_text
-      value: "1 - Pour commencer, choisissez gr\xE2ce \xE0 la tablette ce que vous
-        voulez aller voir."
+      value: "1 - Pour commencer, choisssez une plan\xE8te \xE0 visiter depus la
+        tablette"
       objectReference: {fileID: 0}
     - target: {fileID: 8228542742798409357, guid: 30a1e77eafe8f644dba70315d5f67504,
         type: 3}
@@ -12971,7 +12971,7 @@ PrefabInstance:
     - target: {fileID: 8228542742798409357, guid: 30a1e77eafe8f644dba70315d5f67504,
         type: 3}
       propertyPath: m_text
-      value: 2 - Cliquez ensuite sur le bouton afin de valider votre choix
+      value: 2 - Appuyez sur le bouton rouge pour confirmer votre choix
       objectReference: {fileID: 0}
     - target: {fileID: 8228542742798409357, guid: 30a1e77eafe8f644dba70315d5f67504,
         type: 3}
@@ -19979,7 +19979,8 @@ PrefabInstance:
     - target: {fileID: 8228542742798409357, guid: 30a1e77eafe8f644dba70315d5f67504,
         type: 3}
       propertyPath: m_text
-      value: 3 - Actionner le levier afin d'aller vers votre destination !
+      value: "3 - Actionnez le levier pour envoyer le vaisseau vers la plan\xE8te
+        choisie."
       objectReference: {fileID: 0}
     - target: {fileID: 8228542742798409357, guid: 30a1e77eafe8f644dba70315d5f67504,
         type: 3}
