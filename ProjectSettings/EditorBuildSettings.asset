@@ -11,12 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/2 SpaceShip.unity
     guid: 86f86d3fc1795104f884ddc3f731c157
-  - enabled: 0
-    path: Assets/Scenes/Demo Scene.unity
-    guid: eccb2bc76074b2849b626b75e749890d
-  - enabled: 0
-    path: Assets/Scenes/3 Spaceship Scene.unity
-    guid: c950e6f09b3954e48bc17a21413b0002
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/SolarSystem/CeresView/ceresView.unity
+    guid: bc18ac0dd0f8f6b4a86ed4e6338fba55
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/SolarSystem/EarthView/terreView.unity
+    guid: 12a903b040c047042b26110533411837
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 2238d457089b9494896515a25debf01c,
       type: 2}

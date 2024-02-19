@@ -1,10 +1,14 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Collections; // Nécessaire pour utiliser IEnumerator et les coroutines
+using System.Collections;
 
 public class LoadScene : MonoBehaviour
 {
-    // Utilisez cette méthode pour changer de scène par nom après un délai
+    void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+
     public void LoadSceneUsingName()
     {
         string sceneName = TabletManager.selectedPlanet + "View";
@@ -20,4 +24,6 @@ public class LoadScene : MonoBehaviour
     void ReloadCurrentScene(){
          SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+
 }
