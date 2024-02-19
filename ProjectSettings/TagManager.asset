@@ -8,6 +8,7 @@ TagManager:
   - Flame
   - Water
   - Destroyer
+  - Ball
   layers:
   - Default
   - TransparentFX

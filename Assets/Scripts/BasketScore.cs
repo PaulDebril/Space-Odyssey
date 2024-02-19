@@ -20,7 +20,7 @@ public class BasketScore : MonoBehaviour
     {
         if (scoreText != null) // Vérifie si scoreText est bien référencé
         {
-            scoreText.text = "Score: "+ score; // Met à jour le texte du score
+            scoreText.text = ""+score; // Met à jour le texte du score
         }
         else
         {
