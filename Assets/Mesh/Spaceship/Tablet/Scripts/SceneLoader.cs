@@ -7,7 +7,7 @@ public class LoadScene : MonoBehaviour
     // Utilisez cette méthode pour changer de scène par nom après un délai
     public void LoadSceneUsingName()
     {
-        string sceneName = TabletManager.selectedPlanet;
+        string sceneName = TabletManager.selectedPlanet + "View";
         StartCoroutine(LoadSceneAfterDelay(sceneName)); // Lance la coroutine
     }
 
