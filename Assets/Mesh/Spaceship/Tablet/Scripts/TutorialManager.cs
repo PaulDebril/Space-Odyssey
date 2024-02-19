@@ -28,8 +28,6 @@ public class TutorialManager : MonoBehaviour
         if (step >= tutorialMessages.Length) return;
 
         tutorialStep = step;
-        Debug.Log("Step: " + step);
-        Debug.Log("Message: " + tutorialMessages[step]);
         tutorialText.text = tutorialMessages[step];
     }
 
