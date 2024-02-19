@@ -40,6 +40,7 @@ public class TabletManager : MonoBehaviour
     private void getPlanetOut(GameObject planet, bool isNext)
     {
         planet.GetComponent<Animator>().SetTrigger(!isNext ? "exitNext" : "exitPrevious");
+
     }
 
     private void getPlanetIn(GameObject planet, bool isNext)
@@ -49,6 +50,7 @@ public class TabletManager : MonoBehaviour
 
     public void Next()
     {
+        if (isAnimating(planetsUi[index].GetComponent<Animator>())) return;
         getPlanetOut(planetsUi[index].gameObject, true);
         index = (index + 1) % planetsUi.Length;
         StartCoroutine(changePlanetDelay(true));
@@ -56,8 +58,14 @@ public class TabletManager : MonoBehaviour
 
     public void Previous()
     {
+        if (isAnimating(planetsUi[index].GetComponent<Animator>())) return;
         getPlanetOut(planetsUi[index].gameObject, false);
         index = index - 1 >= 0 ? index - 1 : planetsUi.Length - 1;
         StartCoroutine(changePlanetDelay(false));
+    }
+
+    private bool isAnimating(Animator animator)
+    {
+        return animator.GetCurrentAnimatorStateInfo(0).length > animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
     }
 }
