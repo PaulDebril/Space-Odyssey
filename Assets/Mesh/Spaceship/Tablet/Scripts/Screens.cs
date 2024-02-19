@@ -37,7 +37,7 @@ public class Screens : MonoBehaviour
     {
         leftScreen.fontSize = 30;
         rightScreen.fontSize = 30;
-        planetName = TabletManager.selectedPlanet;
+        planetName = PlanetNameFormat.formatPlanetName(TabletManager.selectedPlanet);
         displayType = ScreenType.Text;
     }
 
@@ -49,8 +49,10 @@ public class Screens : MonoBehaviour
     void Update()
     {
         if (displayType == ScreenType.None) {
-            leftScreen.text = "";
-            rightScreen.text = "";
+            leftScreen.fontSize = 30;
+            rightScreen.fontSize = 30;
+            leftScreen.text = "Choisissez une planète";
+            rightScreen.text = "Choisissez une planète";
             return;
         } else if (displayType == ScreenType.Text) {
             leftScreen.text = "Choix: " + planetName;
