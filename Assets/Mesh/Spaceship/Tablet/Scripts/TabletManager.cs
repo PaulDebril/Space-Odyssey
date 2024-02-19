@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class TabletManager : MonoBehaviour
 {
     public GameObject[] planetsUi;
     public GameObject[] planetsModels;
+    public TMP_Text planetText;
     int index;
     public static string selectedPlanet;
 
@@ -32,6 +34,7 @@ public class TabletManager : MonoBehaviour
         
         getPlanetIn(planetsUi[index].gameObject, isNext);
         TabletManager.selectedPlanet = planetsUi[index].gameObject.name;
+        planetText.text = PlanetNameFormat.formatPlanetName(TabletManager.selectedPlanet);
     }
 
     private void getPlanetOut(GameObject planet, bool isNext)
