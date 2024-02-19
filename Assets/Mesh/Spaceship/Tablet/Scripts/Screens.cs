@@ -62,7 +62,6 @@ public class Screens : MonoBehaviour
             countdown-=Time.deltaTime;
         } else {
             Hyp.GetComponent<GameObjectDisplayController>().ShowObject();
-            Hyp.GetComponent<TestMove>().StartMovementCycle();
             sceneLoader.LoadSceneUsingName();
             displayType = ScreenType.None;
         }
