@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.00040871935, g: 0.00055013, b: 0.00006316835, a: 1}
+  m_IndirectSpecularColor: {r: 0.0003970799, g: 0.00053836143, b: 0.00006245658, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10632,17 +10632,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 203af830c588545d5bfb64fb1135fb48,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.354
+      value: 14.815
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 203af830c588545d5bfb64fb1135fb48,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.483
+      value: 2.831
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 203af830c588545d5bfb64fb1135fb48,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.824
+      value: -5.09
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 203af830c588545d5bfb64fb1135fb48,
         type: 3}
@@ -10701,6 +10701,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 824696482}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 203af830c588545d5bfb64fb1135fb48,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 824696483}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 203af830c588545d5bfb64fb1135fb48,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 824696487}
   m_SourcePrefab: {fileID: 100100000, guid: 203af830c588545d5bfb64fb1135fb48, type: 3}
 --- !u!1 &824696480 stripped
 GameObject:
@@ -10887,6 +10895,51 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!64 &824696483
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824696480}
+  m_Material: {fileID: 13400000, guid: 41df7c413a1af4fb59a232a69601937f, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6202602376506555323, guid: 203af830c588545d5bfb64fb1135fb48, type: 3}
+--- !u!114 &824696487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824696480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PermittedDisplacementAxes: 7
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 1
+  m_AllowTwoHandedScaling: 0
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 0.25
+  m_MaximumScaleRatio: 2
+  m_ScaleMultiplier: 0.25
 --- !u!1001 &837418664
 PrefabInstance:
   m_ObjectHideFlags: 0
