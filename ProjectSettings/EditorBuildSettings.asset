@@ -12,11 +12,20 @@ EditorBuildSettings:
     path: Assets/Scenes/2 SpaceShip.unity
     guid: 86f86d3fc1795104f884ddc3f731c157
   - enabled: 1
-    path: Assets/Scenes/GameScenes/SolarSystem/CeresView/ceresView.unity
+    path: Assets/Scenes/GameScenes/SolarSystem/CeresView/CeresView.unity
     guid: bc18ac0dd0f8f6b4a86ed4e6338fba55
   - enabled: 1
     path: Assets/Scenes/GameScenes/SolarSystem/MercuryView/mercureView.unity
     guid: 0d285ab56b4cd904f82ccd5dbfafd3bf
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/StarScenes/blueGiantView/geanteBleueView.unity
+    guid: eabca9071260c0748b5e00f58309e91b
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/SolarSystem/saturnView/saturneView.unity
+    guid: 22966b3600a864c4ab2eef27db15c6ce
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/SolarSystem/SunView/soleilView.unity
+    guid: 7210f1295dc6d6d448591fae77ce6ecd
   - enabled: 0
     path: Assets/Scenes/GameScenes/SolarSystem/EarthView/terreView.unity
     guid: 12a903b040c047042b26110533411837

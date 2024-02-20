@@ -67,7 +67,6 @@ public class Screens : MonoBehaviour
             sceneLoader.LoadSceneUsingName();
             displayType = ScreenType.None;
         }
-
         double b=System.Math.Round(countdown,2);
 
         leftScreen.text = b.ToString();

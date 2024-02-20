@@ -207,7 +207,7 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 10.699051, g: 11.695311, b: 3.508592, a: 1}
+    - _EmissionColor: {r: 4.2370954, g: 4.2370954, b: 4.2370954, a: 1}
     - _FaceColor: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
