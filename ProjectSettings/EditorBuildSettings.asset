@@ -27,7 +27,7 @@ EditorBuildSettings:
     path: Assets/Scenes/GameScenes/SolarSystem/SunView/soleilView.unity
     guid: 7210f1295dc6d6d448591fae77ce6ecd
   - enabled: 0
-    path: Assets/Scenes/GameScenes/SolarSystem/EarthView/terreView.unity
+    path: Assets/Mesh/scenes/SolarSystem/earthView/earthView.unity
     guid: 12a903b040c047042b26110533411837
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 2238d457089b9494896515a25debf01c,
