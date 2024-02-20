@@ -6921,6 +6921,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3973523036739660308, guid: e350a5d09c905114c86d89f4731448bf,
+        type: 3}
+      propertyPath: m_BlockingMask.m_Bits
+      value: 1879048247
+      objectReference: {fileID: 0}
     - target: {fileID: 4262527805085162948, guid: e350a5d09c905114c86d89f4731448bf,
         type: 3}
       propertyPath: m_IsActive
