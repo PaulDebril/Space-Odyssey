@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/2 SpaceShip.unity
     guid: 86f86d3fc1795104f884ddc3f731c157
   - enabled: 1
-    path: Assets/Scenes/GameScenes/SolarSystem/CeresView/CeresView.unity
+    path: Assets/Scenes/GameScenes/SolarSystem/CeresView/ceresView.unity
     guid: bc18ac0dd0f8f6b4a86ed4e6338fba55
   - enabled: 1
     path: Assets/Scenes/GameScenes/SolarSystem/MercuryView/mercureView.unity
@@ -26,9 +26,33 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameScenes/SolarSystem/SunView/soleilView.unity
     guid: 7210f1295dc6d6d448591fae77ce6ecd
-  - enabled: 0
-    path: Assets/Mesh/scenes/SolarSystem/earthView/earthView.unity
-    guid: 12a903b040c047042b26110533411837
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/SolarSystem/EarthView/earthView.unity
+    guid: b8cac7c70630c9b46b6b8aaec1bf08f0
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/SolarSystem/europeView/europeView.unity
+    guid: 1cbf02c6cc8c3bf49a73cd3db2e3f660
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/SolarSystem/jupiterView/jupiterView.unity
+    guid: 2392c66f3429f1a4f81b66198bc3e5b7
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/SolarSystem/MarsView/marsView.unity
+    guid: e3f9106f9badf8d47a75d99238724c36
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/SolarSystem/neptuneView/neptuneView.unity
+    guid: 4beb5c8239fed8f4c90b98e114af0c89
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/SolarSystem/plutoView/plutonView.unity
+    guid: 5320a7d62b1291446afa3bacb6275511
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/SolarSystem/uranusView/uranusView.unity
+    guid: fc9bda0f328195649bc01950dd9a9d35
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/SolarSystem/VenusView/venusView.unity
+    guid: d9c7966cb77dd4a42920566e65ec597e
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/StarScenes/redDwarfView/naineRougeView.unity
+    guid: c741821573171f049a7736bc4189a7ea
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 2238d457089b9494896515a25debf01c,
       type: 2}
