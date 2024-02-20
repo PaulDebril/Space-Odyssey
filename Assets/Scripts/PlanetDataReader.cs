@@ -16,7 +16,7 @@ public class PlanetDataReader : MonoBehaviour
 
     public Planet GetActivePlanetData()
     {
-        string activePlanet = SceneManager.GetActiveScene().name.replace("View", "");
+        string activePlanet = SceneManager.GetActiveScene().name.Replace("View", "");
         
         switch (activePlanet) {
             case "soleil":
@@ -56,7 +56,7 @@ public class PlanetDataReader : MonoBehaviour
             case "trounoir":
                 return parsedPlanetData.trounoir;
             default:
-                throw new Exception("Planet not found");
+                return new Planet();
         }
     }
 }
