@@ -22,8 +22,10 @@ public class TabletManager : MonoBehaviour
     IEnumerator changePlanetDelay(bool isNext = true)
     {
         yield return new WaitForSeconds(0.667f);
+        planetsUi[index].gameObject.GetComponent<RectTransform>().anchoredPosition = new Vector3(0, 0, 0);
         setActivePlanet(isNext);
         yield return new WaitForSeconds(0.667f);
+        planetsUi[index].gameObject.GetComponent<RectTransform>().anchoredPosition = new Vector3(0, 0, 0);
         isAnimating = false;
     }
 
