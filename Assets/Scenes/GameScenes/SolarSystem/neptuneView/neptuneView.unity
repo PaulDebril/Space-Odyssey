@@ -471,7 +471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IsGlobal: 1
+  m_IsGlobal: 0
   priority: 0
   blendDistance: 0
   weight: 1
@@ -544,7 +544,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.7
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -602,13 +602,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1895627053}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.68204445, y: 0.0061610476, z: 0.73127794, w: 0.003173583}
+  m_LocalRotation: {x: 0.12194444, y: 0.006849769, z: 0.9925127, w: -0.0010539357}
   m_LocalPosition: {x: 2904, y: -300, z: 2398}
   m_LocalScale: {x: 0.92223, y: 0.92223, z: 0.92223}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -0.268, y: 86.012, z: 179.253}
+  m_LocalEulerAnglesHint: {x: -0.794, y: 14.009, z: 180.024}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
