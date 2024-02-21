@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.XR.Content.Interaction;
 
 public class Screens : MonoBehaviour
 {
     public TMP_Text leftScreen;
     public TMP_Text rightScreen;
     public GameObject Hyp;
+    public GameObject lever;
     private ScreenType displayType;
+    public Transform handle;
     private float countdown;
     private string planetName = "";
 
@@ -31,6 +34,7 @@ public class Screens : MonoBehaviour
         leftScreen.fontSize = 80;
         rightScreen.fontSize = 80;
         displayType = ScreenType.Timer;
+        lever.GetComponent<XRLever>().enabled = false;
     }
 
     public void ShowActivePlanet()
@@ -64,7 +68,7 @@ public class Screens : MonoBehaviour
             countdown-=Time.deltaTime;
         } else {
             Hyp.GetComponent<GameObjectDisplayController>().ShowObject();
-            sceneLoader.LoadSceneUsingName();
+            sceneLoader.LoadSceneUsingName(lever, handle);
             displayType = ScreenType.None;
         }
         double b=System.Math.Round(countdown,2);

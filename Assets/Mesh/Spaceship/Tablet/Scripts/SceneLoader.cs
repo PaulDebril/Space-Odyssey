@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using UnityEngine.XR.Content.Interaction;
 
 public class LoadScene : MonoBehaviour
 {
@@ -13,13 +14,13 @@ public class LoadScene : MonoBehaviour
         screens = FindObjectOfType<Screens>();
     }
 
-    public void LoadSceneUsingName()
+    public void LoadSceneUsingName(GameObject lever, Transform handle)
     {
         string sceneName = TabletManager.selectedPlanet + "View";
-        StartCoroutine(LoadSceneAfterDelay(sceneName));
+        StartCoroutine(LoadSceneAfterDelay(sceneName, lever, handle));
     }
 
-    private IEnumerator LoadSceneAfterDelay(string sceneName)
+    private IEnumerator LoadSceneAfterDelay(string sceneName, GameObject lever, Transform handle)
     {
         // Assurez-vous que l'écran affiche le compte à rebours avant de commencer le fondu.
         if (screens != null)
@@ -43,6 +44,9 @@ public class LoadScene : MonoBehaviour
 
         // Chargez la nouvelle scène après que l'objet Hyp a été caché
         SceneManager.LoadScene(sceneName);
+        lever.GetComponent<XRLever>().enabled = false;
+        lever.GetComponent<XRLever>().value = false;
+        handle.localRotation = Quaternion.Euler(50, 0.0f, 0.0f);
     }
 
     void ReloadCurrentScene()
