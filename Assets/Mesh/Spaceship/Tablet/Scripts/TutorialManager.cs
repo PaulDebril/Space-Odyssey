@@ -13,7 +13,7 @@ public class TutorialManager : MonoBehaviour
         "Pour commencer, choisssez une planète à visiter depuis la tablette.",
         "Appuyez sur le bouton rouge pour confirmer votre choix.",
         "Actionnez le levier pour envoyer le vaisseau vers la planète choisie.",
-        "allleeezz"
+        "Rendez-vous sur le pupitre au fond du vaisseau pour en apprendre plus sur la planète visitée."
     };
 
     // Start is called before the first frame update
