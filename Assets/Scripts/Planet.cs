@@ -5,8 +5,8 @@ using UnityEngine;
 [System.Serializable]
 public class Planet
 {
-    public string presentation;
-    public string decouverte;
-    public string geographie;
-    public string mission;
+    public string presentation = "Aucune planête en vue...";
+    public string decouverte = "Aucune planête en vue...";
+    public string geographie = "Aucune planête en vue...";
+    public string mission = "Aucune planête en vue...";
 }
