@@ -17,7 +17,7 @@ public class LoadScene : MonoBehaviour
     public void LoadSceneUsingName(GameObject lever, Transform handle, GameObject fadeScreen)
     {
         string sceneName = TabletManager.selectedPlanet + "View";
-        fadeScreen.gameObject.GetComponent<FadeScreen>().FadeIn();
+        fadeScreen.gameObject.GetComponent<FadeScreen>().FadeOut();
         StartCoroutine(LoadSceneAfterDelay(sceneName, lever, handle, fadeScreen.gameObject.GetComponent<FadeScreen>()));
     }
 
@@ -48,7 +48,7 @@ public class LoadScene : MonoBehaviour
         lever.GetComponent<XRLever>().enabled = false;
         lever.GetComponent<XRLever>().value = false;
         handle.localRotation = Quaternion.Euler(50, 0.0f, 0.0f);
-        fadeScreen.FadeOut();
+        fadeScreen.FadeIn();
     }
 
     void ReloadCurrentScene()
