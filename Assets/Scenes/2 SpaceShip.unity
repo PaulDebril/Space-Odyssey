@@ -18372,11 +18372,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialText: {fileID: 1229897962}
   tutorialMessages:
-  - "Pour commencer, choisssez une plan\xE8te \xE0 visiter depuis la tablette."
-  - Appuyez sur le bouton rouge pour confirmer votre choix.
-  - "Actionnez le levier pour envoyer le vaisseau vers la plan\xE8te choisie."
-  - "Rendez-vous sur le pupitre au fond du vaisseau pour en apprendre plus sur la
-    plan\xE8te visit\xE9e."
+  - Firstly, choose a planet to visit on the tablet.
+  - Press the red button to confirm your choice.
+  - Press the lever to send the ship to the chosen planet.
+  - Go to the desk at the back of the ship to learn more about the planet you're
+    visiting.
 --- !u!4 &1455609700
 Transform:
   m_ObjectHideFlags: 0
@@ -18545,7 +18545,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Pr\xE9sentation"
+  m_text: Presentation
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -21455,7 +21455,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "G\xE9ographie"
+  m_text: Geography
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -23050,7 +23050,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "D\xE9couverte"
+  m_text: Discoveries
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

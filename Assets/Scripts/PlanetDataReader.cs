@@ -79,15 +79,15 @@ public class PlanetDataReader : MonoBehaviour
         switch (textType)
         {
             case "presentation":
-                planetTitle.text = "Présentation";
+                planetTitle.text = "Presentation";
                 planetInfo.text = planetData.presentation;
                 break;
             case "decouverte":
-                planetTitle.text = "Découverte";
+                planetTitle.text = "Discoveries";
                 planetInfo.text = planetData.decouverte;
                 break;
             case "geographie":
-                planetTitle.text = "Géographie";
+                planetTitle.text = "Geography";
                 planetInfo.text = planetData.geographie;
                 break;
             case "mission":
@@ -95,7 +95,7 @@ public class PlanetDataReader : MonoBehaviour
                 planetInfo.text = planetData.mission;
                 break;
             default:
-                planetTitle.text = "Présentation";
+                planetTitle.text = "Presentation";
                 planetInfo.text = planetData.presentation;
                 break;
         }

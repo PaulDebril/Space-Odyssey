@@ -55,12 +55,12 @@ public class Screens : MonoBehaviour
         if (displayType == ScreenType.None) {
             leftScreen.fontSize = 30;
             rightScreen.fontSize = 30;
-            leftScreen.text = "Choisissez une planète";
-            rightScreen.text = "Choisissez une planète";
+            leftScreen.text = "Choose a planet...";
+            rightScreen.text = "Choose a planet...";
             return;
         } else if (displayType == ScreenType.Text) {
-            leftScreen.text = "Choix: " + planetName;
-            rightScreen.text = "Choix: " + planetName;
+            leftScreen.text = "Choice: " + planetName;
+            rightScreen.text = "Choice: " + planetName;
             return;
         };
 

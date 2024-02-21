@@ -10,10 +10,10 @@ public class TutorialManager : MonoBehaviour
     private int tutorialStep = 0;
 
     public string[] tutorialMessages = {
-        "Pour commencer, choisssez une planète à visiter depuis la tablette.",
-        "Appuyez sur le bouton rouge pour confirmer votre choix.",
-        "Actionnez le levier pour envoyer le vaisseau vers la planète choisie.",
-        "Rendez-vous sur le pupitre au fond du vaisseau pour en apprendre plus sur la planète visitée."
+        "Firstly, choose a planet to visit on the tablet.",
+        "Press the red button to confirm your choice.",
+        "Press the lever to send the ship to the chosen planet.",
+        "Go to the desk at the back of the ship to learn more about the planet you're visiting."
     };
 
     // Start is called before the first frame update
