@@ -14,13 +14,14 @@ public class LoadScene : MonoBehaviour
         screens = FindObjectOfType<Screens>();
     }
 
-    public void LoadSceneUsingName(GameObject lever, Transform handle)
+    public void LoadSceneUsingName(GameObject lever, Transform handle, GameObject fadeScreen)
     {
         string sceneName = TabletManager.selectedPlanet + "View";
-        StartCoroutine(LoadSceneAfterDelay(sceneName, lever, handle));
+        fadeScreen.gameObject.GetComponent<FadeScreen>().FadeIn();
+        StartCoroutine(LoadSceneAfterDelay(sceneName, lever, handle, fadeScreen.gameObject.GetComponent<FadeScreen>()));
     }
 
-    private IEnumerator LoadSceneAfterDelay(string sceneName, GameObject lever, Transform handle)
+    private IEnumerator LoadSceneAfterDelay(string sceneName, GameObject lever, Transform handle, FadeScreen fadeScreen)
     {
         // Assurez-vous que l'écran affiche le compte à rebours avant de commencer le fondu.
         if (screens != null)
@@ -47,6 +48,7 @@ public class LoadScene : MonoBehaviour
         lever.GetComponent<XRLever>().enabled = false;
         lever.GetComponent<XRLever>().value = false;
         handle.localRotation = Quaternion.Euler(50, 0.0f, 0.0f);
+        fadeScreen.FadeOut();
     }
 
     void ReloadCurrentScene()

@@ -10,8 +10,9 @@ public class Screens : MonoBehaviour
     public TMP_Text rightScreen;
     public GameObject Hyp;
     public GameObject lever;
-    private ScreenType displayType;
     public Transform handle;
+    public GameObject fadeScreen;
+    private ScreenType displayType;
     private float countdown;
     private string planetName = "";
 
@@ -68,7 +69,7 @@ public class Screens : MonoBehaviour
             countdown-=Time.deltaTime;
         } else {
             Hyp.GetComponent<GameObjectDisplayController>().ShowObject();
-            sceneLoader.LoadSceneUsingName(lever, handle);
+            sceneLoader.LoadSceneUsingName(lever, handle, fadeScreen);
             displayType = ScreenType.None;
         }
         double b=System.Math.Round(countdown,2);
