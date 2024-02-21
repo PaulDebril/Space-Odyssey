@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShipMovement : MonoBehaviour
 {
-    public float speed = 1;
+    public float speed = 5;
     public GameObject ship;
     private Transform shipTransform;
     private bool shouldStart = false;
@@ -17,6 +17,7 @@ public class ShipMovement : MonoBehaviour
     public void EndMove()
     {
         shouldStart = false;
+        shipTransform.position = new Vector3(0, 0, 0);
     }
 
     void Start()
@@ -28,6 +29,6 @@ public class ShipMovement : MonoBehaviour
     void Update()
     {
         if (!shouldStart) return;
-        shipTransform.position += shipTransform.transform.forward * speed;
+        shipTransform.Translate(-Vector3.forward * speed * Time.deltaTime);
     }
 }

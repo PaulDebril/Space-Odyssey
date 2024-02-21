@@ -37,7 +37,6 @@ public class Screens : MonoBehaviour
         rightScreen.fontSize = 80;
         displayType = ScreenType.Timer;
         lever.GetComponent<XRLever>().enabled = false;
-        shipMove.GetComponent<ShipMovement>().StartMove();
     }
 
     public void ShowActivePlanet()
@@ -71,9 +70,9 @@ public class Screens : MonoBehaviour
             countdown-=Time.deltaTime;
         } else {
             Hyp.GetComponent<GameObjectDisplayController>().ShowObject();
-            sceneLoader.LoadSceneUsingName(lever, handle, fadeScreen);
+            sceneLoader.LoadSceneUsingName(lever, handle, fadeScreen, shipMove.gameObject.GetComponent<ShipMovement>());
             displayType = ScreenType.None;
-            shipMove.GetComponent<ShipMovement>().EndMove();
+            shipMove.gameObject.GetComponent<ShipMovement>().StartMove();
         }
         double b=System.Math.Round(countdown,2);
 

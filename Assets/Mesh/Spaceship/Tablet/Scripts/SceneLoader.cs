@@ -14,14 +14,13 @@ public class LoadScene : MonoBehaviour
         screens = FindObjectOfType<Screens>();
     }
 
-    public void LoadSceneUsingName(GameObject lever, Transform handle, GameObject fadeScreen)
+    public void LoadSceneUsingName(GameObject lever, Transform handle, GameObject fadeScreen, ShipMovement shipMove)
     {
         string sceneName = TabletManager.selectedPlanet + "View";
-        fadeScreen.gameObject.GetComponent<FadeScreen>().FadeOut();
-        StartCoroutine(LoadSceneAfterDelay(sceneName, lever, handle, fadeScreen.gameObject.GetComponent<FadeScreen>()));
+        StartCoroutine(LoadSceneAfterDelay(sceneName, lever, handle, fadeScreen.gameObject.GetComponent<FadeScreen>(), shipMove));
     }
 
-    private IEnumerator LoadSceneAfterDelay(string sceneName, GameObject lever, Transform handle, FadeScreen fadeScreen)
+    private IEnumerator LoadSceneAfterDelay(string sceneName, GameObject lever, Transform handle, FadeScreen fadeScreen, ShipMovement shipMove)
     {
         // Assurez-vous que l'écran affiche le compte à rebours avant de commencer le fondu.
         if (screens != null)
@@ -31,7 +30,9 @@ public class LoadScene : MonoBehaviour
         }
 
         // Attendre 5 secondes avant de continuer
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
+        fadeScreen.FadeOut();
+        yield return new WaitForSeconds(2);
 
         // Vérifiez si l'objet Hyp est affecté et cachez-le si c'est le cas
         if (screens != null && screens.Hyp != null)
@@ -48,6 +49,7 @@ public class LoadScene : MonoBehaviour
         lever.GetComponent<XRLever>().enabled = false;
         lever.GetComponent<XRLever>().value = false;
         handle.localRotation = Quaternion.Euler(50, 0.0f, 0.0f);
+        shipMove.EndMove();
         fadeScreen.FadeIn();
     }
 
