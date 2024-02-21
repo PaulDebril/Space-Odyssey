@@ -854,7 +854,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 641c6004a2c24aa46b962cac7329e611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 200
   ship: {fileID: 73527196}
 --- !u!1001 &130155542
 PrefabInstance:
@@ -1798,7 +1798,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &182184674
 Animator:
   serializedVersion: 5
@@ -2202,6 +2202,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Naine_blanche
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 627945c1402cfab42af1c6f7a5474903,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2210,12 +2215,6 @@ PrefabInstance:
 --- !u!4 &244635210 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 627945c1402cfab42af1c6f7a5474903,
-    type: 3}
-  m_PrefabInstance: {fileID: 244635209}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &244635211 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 627945c1402cfab42af1c6f7a5474903,
     type: 3}
   m_PrefabInstance: {fileID: 244635209}
   m_PrefabAsset: {fileID: 0}
@@ -3111,7 +3110,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &359017755
 Animator:
   serializedVersion: 5
@@ -7211,7 +7210,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 70
+      scalar: 83.88
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -7329,7 +7328,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -7382,7 +7381,7 @@ ParticleSystem:
     startSizeY:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 15
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -7435,7 +7434,7 @@ ParticleSystem:
     startSizeZ:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -11807,8 +11806,8 @@ Transform:
   m_GameObject: {fileID: 682508206}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.7546606, y: -0.038727522, z: -120.44877}
-  m_LocalScale: {x: 1, y: 1, z: 1.7871}
+  m_LocalPosition: {x: -3.7546606, y: -0.038727522, z: -430.9}
+  m_LocalScale: {x: 1, y: 1, z: 4.566755}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 73527197}
@@ -12326,33 +12325,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetsUi:
-  - {fileID: 1400310613}
-  - {fileID: 1203354072}
+  - {fileID: 1385426121}
   - {fileID: 1847922334}
+  - {fileID: 1400310613}
+  - {fileID: 1722421747}
   - {fileID: 998012914}
   - {fileID: 1633591434}
   - {fileID: 1175316237}
-  - {fileID: 182184673}
-  - {fileID: 1206100848}
   - {fileID: 2045494253}
   - {fileID: 888086177}
-  - {fileID: 1385426121}
   - {fileID: 1983447529}
   - {fileID: 362486355}
+  - {fileID: 359017754}
+  - {fileID: 1573372097}
   planetsModels:
-  - {fileID: 1170328409}
-  - {fileID: 1598860056}
+  - {fileID: 340917555}
   - {fileID: 1148153277}
+  - {fileID: 1170328409}
+  - {fileID: 1262270450}
   - {fileID: 1520150097}
   - {fileID: 633943934}
   - {fileID: 290149690}
-  - {fileID: 244635211}
-  - {fileID: 1527266125}
   - {fileID: 1554405309}
   - {fileID: 2036101617}
-  - {fileID: 340917555}
   - {fileID: 395262852}
   - {fileID: 1065451942}
+  - {fileID: 1819072101}
+  - {fileID: 1942336477}
   planetText: {fileID: 957102579}
 --- !u!4 &742394413
 Transform:
@@ -16558,7 +16557,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1203354073
 Animator:
   serializedVersion: 5
@@ -16700,7 +16699,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1206100849
 Animator:
   serializedVersion: 5
@@ -17384,7 +17383,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 670242b0f909422448f97db68ff0eebe,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1565130815791172202, guid: 670242b0f909422448f97db68ff0eebe,
         type: 3}
@@ -19369,6 +19368,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Naine_rouge
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e8304b11f8b7cc4eb62a043f87848ca,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19377,12 +19381,6 @@ PrefabInstance:
 --- !u!4 &1527266124 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1e8304b11f8b7cc4eb62a043f87848ca,
-    type: 3}
-  m_PrefabInstance: {fileID: 1527266123}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1527266125 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1e8304b11f8b7cc4eb62a043f87848ca,
     type: 3}
   m_PrefabInstance: {fileID: 1527266123}
   m_PrefabAsset: {fileID: 0}
@@ -19468,6 +19466,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Neptune
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 02727689037afa9439128c8dbb1a056f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19597,7 +19600,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &1573372098
 Animator:
   serializedVersion: 5
@@ -20057,7 +20060,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c32c84c864283644785fc5f6e6a32c5c,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20161,12 +20164,6 @@ PrefabInstance:
 --- !u!4 &1598860055 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 77bc85711a861dc4bada692c0420df7f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1598860054}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1598860056 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 77bc85711a861dc4bada692c0420df7f,
     type: 3}
   m_PrefabInstance: {fileID: 1598860054}
   m_PrefabAsset: {fileID: 0}
@@ -21402,7 +21399,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6174d989ad707254e94167af18dc5e55,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21554,7 +21551,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &1722421748
 Animator:
   serializedVersion: 5
@@ -22395,6 +22392,12 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1819072101 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6174d989ad707254e94167af18dc5e55,
+    type: 3}
+  m_PrefabInstance: {fileID: 1696996837}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1824316035
 GameObject:
   m_ObjectHideFlags: 0
@@ -23511,6 +23514,12 @@ MonoBehaviour:
   m_Move: {fileID: -8198699208435500284, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_SmoothMotionEnabled: 0
   m_SmoothTurnEnabled: 0
+--- !u!1 &1942336477 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c32c84c864283644785fc5f6e6a32c5c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1594366217}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1968876570
 PrefabInstance:
   m_ObjectHideFlags: 0
