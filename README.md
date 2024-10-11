@@ -65,12 +65,6 @@ Contributions are welcome! If you have suggestions for new features, find bugs, 
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
 
-## Acknowledgements
-
-- Developed with Unity
-- Educational content inspired by astronomy resources
-- VR support for Oculus and HTC Vive
-
 ---
 
 Enjoy your space journey and expand your knowledge of the cosmos with **Space Odyssey**!
